@@ -1,0 +1,22 @@
+# mount point	fstype	device					device2				flags
+system		/system		ext4	display="System";logical,first_stage_mount
+vendor		/vendor		ext4	display="Vendor";logical,first_stage_mount
+product		/product	ext4	display="Product";logical,first_stage_mount
+odm		/odm		ext4	display="Odm";logical,first_stage_mount
+
+/optics				ext4	/dev/block/platform/13100000.ufs/by-name/optics  	flags=backup=1;display="Optics"
+/prism				ext4	/dev/block/platform/13100000.ufs/by-name/prism  	flags=backup=1;display="Prism"
+/boot				emmc	/dev/block/platform/13100000.ufs/by-name/boot	
+/cache				ext4	/dev/block/platform/13100000.ufs/by-name/cache  	flags=backup=1;display="Cache"
+/data				f2fs	/dev/block/platform/13100000.ufs/by-name/userdata 					
+/recovery			emmc    /dev/block/platform/13100000.ufs/by-name/recovery	flags=backup=1;display="Recovery";flashimg=1
+/misc				emmc	/dev/block/platform/13100000.ufs/by-name/misc
+/modem				emmc	/dev/block/platform/13100000.ufs/by-name/radio		flags=backup=1;display="Modem"
+/efs				ext4	/dev/block/platform/13100000.ufs/by-name/efs		flags=backup=1;display="EFS"
+/carrier			ext4	/dev/block/platform/13100000.ufs/by-name/carrier	flags=backup=1;display="Carrier"
+/preload			ext4	/dev/block/platform/13100000.ufs/by-name/hidden
+#/cpefs		ext4	/dev/block/platform/13100000.ufs/by-name/cpefs					flags=backup=1;display=CPEFS
+
+# Removable storage
+/external_sd			vfat	/dev/block/mmcblk0p1 /dev/block/mmcblk0			flags=storage;wipeingui;removable
+/usb-otg			vfat	/dev/block/sdf1 /dev/block/sdf				flags=display="USB-OTG";storage;wipeingui;removable
