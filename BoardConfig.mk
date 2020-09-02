@@ -35,7 +35,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_BOARD_PLATFORM_GPU := mali-g76
+TARGET_BOARD_PLATFORM_GPU := mali-g77
 
 # Filesystem
 BOARD_HAS_LARGE_FILESYSTEM := true
