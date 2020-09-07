@@ -83,9 +83,9 @@ service ueventd /sbin/ueventd
     critical
     seclabel u:r:ueventd:s0
 
-service charger /system/bin/charger
-    critical
-    seclabel u:r:charger:s0
+#service charger /system/bin/charger
+#    critical
+#    seclabel u:r:charger:s0
 
 #service recovery /system/bin/recovery
 #    socket recovery stream 422 system system
