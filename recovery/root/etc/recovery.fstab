@@ -16,8 +16,6 @@ odm		/odm		ext4	display="Odm";logical,first_stage_mount
 /modem				emmc	/dev/block/platform/13100000.ufs/by-name/radio		flags=backup=1;display="Modem"
 /efs				ext4	/dev/block/platform/13100000.ufs/by-name/efs		flags=backup=1;display="EFS"
 /sec_efs			ext4	/dev/block/platform/13100000.ufs/by-name/sec_efs	flags=backup=1;display="Sec EFS"
-/carrier			ext4	/dev/block/platform/13100000.ufs/by-name/carrier	flags=backup=1;display="Carrier"
-/preload			ext4	/dev/block/platform/13100000.ufs/by-name/hidden
 
 # Removable storage
 /external_sd			vfat	/dev/block/mmcblk0p1 /dev/block/mmcblk0			flags=storage;wipeingui;removable
