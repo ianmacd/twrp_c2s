@@ -12,6 +12,7 @@ odm		/odm		ext4
 /cache				ext4	/dev/block/platform/13100000.ufs/by-name/cache  	flags=backup=1;display="Cache"
 /data				f2fs	/dev/block/platform/13100000.ufs/by-name/userdata
 /recovery			emmc    /dev/block/platform/13100000.ufs/by-name/recovery	flags=backup=1;display="Recovery";flashimg=1
+/metadata			ext4	/dev/block/platform/13100000.ufs/by-name/metadata	flags=backup=1;display="Metadata"
 /misc				emmc	/dev/block/platform/13100000.ufs/by-name/misc
 /modem				emmc	/dev/block/platform/13100000.ufs/by-name/radio		flags=backup=1;display="Modem"
 /efs				ext4	/dev/block/platform/13100000.ufs/by-name/efs		flags=backup=1;display="EFS"
