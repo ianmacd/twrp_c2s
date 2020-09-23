@@ -35,7 +35,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 # Bootloader
 BOARD_VENDOR := samsung
 TARGET_SOC := exynos990
-TARGET_BOOTLOADER_BOARD_NAME := universal990
+TARGET_BOOTLOADER_BOARD_NAME := exynos990
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 TARGET_NO_RADIOIMAGE := true
@@ -49,7 +49,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos990
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 2 --board SRPTB27C001RU
 
 # Platform
-TARGET_BOARD_PLATFORM := exynos5
+TARGET_BOARD_PLATFORM := exynos990
 TARGET_BOARD_PLATFORM_GPU := mali-g77
 
 # Filesystem
