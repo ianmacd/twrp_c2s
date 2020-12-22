@@ -11,6 +11,8 @@
 # limitations under the License.
 #
 
+PLATFORM_VERSION := 11
+
 DEVICE_PATH := device/samsung/c2s
 
 # Architecture
@@ -72,7 +74,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
-PLATFORM_SECURITY_PATCH := 2020-11-01
+PLATFORM_SECURITY_PATCH := 2020-12-01
 
 BOARD_KERNEL_IMAGE_NAME := Image
 
